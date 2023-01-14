@@ -26,7 +26,7 @@ const LeftArrow = () => {
     );
   };
 
-const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => (
+const HorizontalScrollbar = ({ data, bodyParts, bodyPart, setBodyPart }) => (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
         {data.map((item) => (
         <Box key={item.id || item}
