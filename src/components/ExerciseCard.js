@@ -11,7 +11,15 @@ const ExerciseCard = ({ exercise }) => {
                 fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
                 {exercise.bodyPart}
             </Button>
+            <Button sx={{ ml: '21px', color: '#fff', background: '#FCC757',
+                fontSize: '14px', borderRadius: '20px', textTransform: 'capitalize' }}>
+                {exercise.target}
+            </Button>
         </Stack>
+        <Typography ml="21px" color="#000" fontWeight="bold" mt="11px"
+          pb="10px" textTransform="capitalize" fontSize="20px">
+          {exercise.name}
+        </Typography>
     </Link>
   )
 }
