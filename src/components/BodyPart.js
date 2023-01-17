@@ -6,6 +6,7 @@ import Icon from '../assets/icons/gym.png';
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
     //console.log("Item: " + item + "  BodyPart: " + bodyPart);
   return (
+    <a href='#exercises' style={{textDecoration: 'none'}}>
     <Stack
         type="button"
         alignItems="center"
@@ -22,16 +23,18 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
         }}
         onClick={() => {
             setBodyPart(item);
-            window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
+            // window.scrollTo({top: 1800, left: 100, behavior: 'smooth'})
         }}
     >
         <img src={Icon} alt="dumbbell" style={{
+            margin: '0 auto',
             width: '40px',
             height: '40px'
         }}/>
         <Typography fontSize="24px" fontWeight="bold"
          color="#3A1212" textTransform="capitalize" >{item}</Typography>
     </Stack>
+    </a>
   )
 }
 
