@@ -6,11 +6,12 @@ import Logo from '../assets/images/Logo-1.png';
 const Footer = () => {
   return (
     <Box mt="80px" bgcolor="#FFF3F4">
-      <Stack gap="40px" alignItems="center" px="40px" pt="24px">
-        <img src={Logo} alt="logo" width="200px" height="40px" />
-        <Typography variant="h6" fontStyle="italic" pb="40px" mt="20px">
-        Made by Roberto Guevara
-      </Typography>
+      <Stack alignItems="center" px="40px" pt="24px">
+        <img src={Logo} alt="logo" />
+        <Typography variant="h6" fontWeight="600" color="#FF2625">Red Gorilla</Typography>
+        <Typography fontStyle="italic" pb="40px" mt="20px">
+        Developed by Roberto Guevara
+        </Typography>
       </Stack>
     </Box>
   )
